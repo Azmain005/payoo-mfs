@@ -15,7 +15,7 @@ document.getElementById('loginbtn').addEventListener('click', function(event) {
     event.preventDefault();
     const phoneNumber = document.getElementById('mobile').value;
     const password = document.getElementById('pin').value;
-    if (phoneNumber === '01718' && password === '123456') {
+    if (phoneNumber === '01718' && password === '1234') {
         window.location.href = 'home.html'; // Redirect to home.html on successful login
     } else {
         alert('Wrong mobile number or pin!');

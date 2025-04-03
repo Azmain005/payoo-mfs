@@ -29,8 +29,8 @@
             <div class="divider"></div>
             <!-- User action button -->
             <div>
-              <button class="btn btn-lg" id="addMoney">Add Money</button>
-              <button class="btn btn-lg">Cash Out</button>
+              <button class="btn btn-lg" id="showaddMoney">Add Money</button>
+              <button class="btn btn-lg" id="showcashOut">Cash Out</button>
             </div>
             <div class="divider"></div>
             <!-- add money form start -->
@@ -71,10 +71,49 @@
               </form>
             </div>
             <!-- add money form end -->
+            <!-- cash out start -->
+            <div
+              class="card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl hidden"
+              id="cashoutform"
+            >
+              <form class="card-body">
+                <div class="form-control">
+                  <label class="label">
+                    <span class="label-text">Amount</span>
+                  </label>
+                  <input
+                    type="text"
+                    placeholder="Please enter amount"
+                    class="input input-bordered"
+                    required
+                    id="cashamount"
+                  />
+                </div>
+                <div class="form-control">
+                  <label class="label">
+                    <span class="label-text">Pin</span>
+                  </label>
+                  <input
+                    type="password"
+                    placeholder="Enter 4 Digit Pin"
+                    class="input input-bordered"
+                    required
+                    id="cashpin"
+                  />
+                </div>
+                <div class="form-control mt-6">
+                  <button class="btn btn-primary" id="cashoutbtn">
+                    Cash Out
+                  </button>
+                </div>
+              </form>
+            </div>
+            <!-- cash out end -->
           </div>
         </div>
       </div>
     </main>
     <script src="js/addmoney.js"></script>
+    <script src="js/feature.js"></script>
   </body>
 </html>
